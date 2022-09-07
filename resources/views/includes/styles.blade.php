@@ -18,8 +18,8 @@
 <link rel="apple-touch-icon" href="{{asset('assets/images/favicon/favicon-152.png')}}" sizes="152x152">
 <link rel="apple-touch-icon" href="{{asset('assets/images/favicon/favicon-167.png')}}" sizes="167x167">
 <link rel="apple-touch-icon" href="{{asset('assets/images/favicon/favicon-180.png')}}" sizes="180x180">
-<style>
+{{-- <style>
     body {
         font-family: Poppins, 'Nunito', sans-serif;
     }
-</style>
+</style> --}}

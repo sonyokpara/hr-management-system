@@ -13,19 +13,19 @@ use App\Models\Employee;
 
 class EmployeeController extends Controller
 {
-    public function personalDetailsView(){
+    private function getEmployee(){
+        $id = session('emp_id');
+        $employee = Employee::where('id', $id)->get();
+        return $employee;
+    }
 
+    public function personalDetailsView(){
         $countries = Country::all();
         $departments = Department::all();
         $sections = Section::all();
         $shifts = Roster::all();
 
-        return view('dashboard.employee.personal-details')->with([
-            'countries'    => $countries,
-            'departments'  => $departments,
-            'sections'     => $sections,
-            'shifts'       => $shifts,
-        ]);
+        return view('dashboard.employee.personal-details')->with(['employee' => $this->getEmployee()]);
     }
 
     public function savePersonalDetails(PersonalDetailsRequest $request){
@@ -52,8 +52,8 @@ class EmployeeController extends Controller
     }
 
     public function contactView(){
-        $id = session('emp_id');
-        return view('dashboard.employee.contact')->with(['id' => $id]);
+
+        return view('dashboard.employee.contact')->with(['employee' => $this->getEmployee()]);
     }
 
     public function saveContact(ResidentialRequest $request){
