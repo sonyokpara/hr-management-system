@@ -5,12 +5,12 @@
 @section('content')
 
 <!-- Summaries -->
-<div class="grid sm:grid-cols-3 mb-5 gap-5">
+<div class="grid sm:grid-cols-4 mb-5 gap-5">
     <div
         class="card px-4 py-8 flex justify-center items-center text-center lg:transform hover:scale-110 hover:shadow-lg transition-transform duration-200">
         <div>
             <span class="text-primary text-5xl leading-none la la-users"></span>
-            <p class="mt-2">Employees Total</p>
+            <p class="mt-2">Employees</p>
             <div class="text-primary mt-5 text-3xl leading-none">18</div>
         </div>
     </div>
@@ -18,7 +18,7 @@
         class="card px-4 py-8 flex justify-center items-center text-center lg:transform hover:scale-110 hover:shadow-lg transition-transform duration-200">
         <div>
             <span class="text-primary text-5xl leading-none la la-arrow-left"></span>
-            <p class="mt-2">Clock-Ins</p>
+            <p class="mt-2">Attendance</p>
             <div class="text-primary mt-5 text-3xl leading-none">16</div>
         </div>
     </div>
@@ -28,6 +28,14 @@
             <span class="text-primary text-5xl leading-none la la-layer-group"></span>
             <p class="mt-2">Pending Leaves</p>
             <div class="text-primary mt-5 text-3xl leading-none">9</div>
+        </div>
+    </div>
+    <div
+        class="card px-4 py-8 flex justify-center items-center text-center lg:transform hover:scale-110 hover:shadow-lg transition-transform duration-200">
+        <div>
+            <span class="text-primary text-5xl leading-none la la-layer-group"></span>
+            <p class="mt-2">Approved Leaves</p>
+            <div class="text-primary mt-5 text-3xl leading-none">5</div>
         </div>
     </div>
 </div>
