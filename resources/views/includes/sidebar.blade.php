@@ -26,7 +26,7 @@
         <a href="#no-link" class="link" data-target="[data-menu=applications]" data-toggle="tooltip-menu"
             data-tippy-content="Applications">
             <span class="icon la la-warehouse"></span>
-            <span class="title">Bank</span>
+            <span class="title">Departments</span>
         </a>
         <a href="#no-link" class="link" data-target="[data-menu=menu]" data-toggle="tooltip-menu"
             data-tippy-content="Menu">
